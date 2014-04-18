@@ -1,4 +1,5 @@
 ClassSchedule::Application.routes.draw do
+  get "departments" => 'departments#index'
   resources :students
   resources :courses
   root to: 'students#index'
